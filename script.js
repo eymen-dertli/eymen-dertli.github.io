@@ -1,54 +1,43 @@
-const navToggle = document.querySelector('.nav-toggle');
-const siteNav = document.querySelector('.site-nav');
-const navLinks = document.querySelectorAll('.site-nav a');
-const yearTarget = document.getElementById('year');
-const filterButtons = document.querySelectorAll('.filter-button');
-const projectCards = document.querySelectorAll('.project-card');
-const revealElements = document.querySelectorAll('.reveal');
+const translations = {
+  tr: {
+    hero_name: "Enis Eymen Dertli",
+    hero_role: "Oyun Geliştirici",
+    about_title: "Hakkımda",
+    about_text: "Modern oyun teknolojileri ile oynanış odaklı projeler geliştiriyorum.",
+    projects_title: "Projeler",
+    project1_title: "Örnek Oyun Projesi",
+    project1_desc: "Oynanış odaklı bir aksiyon deneyimi.",
+    contact_title: "İletişim"
+  },
+  en: {
+    hero_name: "Enis Eymen Dertli",
+    hero_role: "Game Developer",
+    about_title: "About Me",
+    about_text: "I develop gameplay-focused projects using modern game technologies.",
+    projects_title: "Projects",
+    project1_title: "Sample Game Project",
+    project1_desc: "A gameplay-focused action experience.",
+    contact_title: "Contact"
+  }
+};
 
-if (yearTarget) {
-  yearTarget.textContent = new Date().getFullYear();
-}
+let currentLang = localStorage.getItem("lang") || "en";
 
-if (navToggle && siteNav) {
-  navToggle.addEventListener('click', () => {
-    const expanded = navToggle.getAttribute('aria-expanded') === 'true';
-    navToggle.setAttribute('aria-expanded', String(!expanded));
-    siteNav.classList.toggle('is-open');
-  });
-
-  navLinks.forEach((link) => {
-    link.addEventListener('click', () => {
-      navToggle.setAttribute('aria-expanded', 'false');
-      siteNav.classList.remove('is-open');
-    });
-  });
-}
-
-filterButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const filter = button.dataset.filter;
-
-    filterButtons.forEach((btn) => btn.classList.remove('is-active'));
-    button.classList.add('is-active');
-
-    projectCards.forEach((card) => {
-      const categories = card.dataset.category.split(' ');
-      const shouldShow = filter === 'all' || categories.includes(filter);
-      card.classList.toggle('is-hidden', !shouldShow);
-    });
-  });
-});
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('is-visible');
-      observer.unobserve(entry.target);
+function setLanguage(lang) {
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[lang][key]) {
+      el.textContent = translations[lang][key];
     }
   });
-}, {
-  threshold: 0.18
+
+  document.documentElement.lang = lang;
+  localStorage.setItem("lang", lang);
+}
+
+document.getElementById("langToggle").addEventListener("click", () => {
+  currentLang = currentLang === "tr" ? "en" : "tr";
+  setLanguage(currentLang);
 });
 
-revealElements.forEach((element) => observer.observe(element));
+setLanguage(currentLang);
