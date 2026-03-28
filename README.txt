@@ -1,0 +1,20 @@
+GitHub Pages Kurulum
+
+1) GitHub'da yeni bir repo aç.
+2) Bu klasördeki dosyaları repo içine yükle.
+3) Ana dosyanın adı index.html olmalı.
+4) Repo > Settings > Pages > Build and deployment > Deploy from a branch seç.
+5) Branch olarak main ve klasör olarak /(root) seç.
+6) Save dedikten sonra birkaç dakika içinde site yayına alınır.
+
+Kişiselleştirmen gereken yerler:
+- index.html içindeki isim, açıklamalar ve proje kartları
+- mail@example.com
+- GitHub ve LinkedIn linkleri
+- Proje linklerindeki # işaretleri
+
+İstersen daha sonra şunlar da eklenebilir:
+- Proje detay sayfaları
+- Oynanış GIF'leri / ekran görüntüleri
+- İndirme CV butonu
+- İngilizce sürüm
