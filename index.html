@@ -1,87 +1,297 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Enis Eymen Dertli - Game Developer Portfolio. Unity, C#, gameplay systems, prototype development ve oyun projeleri." />
+  <meta name="theme-color" content="#0b1020" />
   <title>Enis Eymen Dertli | Game Developer</title>
-  <meta name="description" content="Game developer portfolio with Turkish and English language switch." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <button id="langToggle" class="lang-toggle" aria-label="Change language">
-    <span class="lang-label" data-i18n="lang_button">TR</span>
-  </button>
+  <a class="skip-link" href="#main-content">İçeriğe geç</a>
 
-  <header class="hero">
-    <nav class="nav">
-      <div class="brand">EED</div>
-      <div class="nav-links">
-        <a href="#about" data-i18n="nav_about">About</a>
-        <a href="#projects" data-i18n="nav_projects">Projects</a>
-        <a href="#contact" data-i18n="nav_contact">Contact</a>
-      </div>
-    </nav>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">
+        <span class="brand-mark"></span>
+        <span>ENİS EYMEN DERTLİ</span>
+      </a>
 
-    <div class="hero-content">
-      <p class="eyebrow" data-i18n="hero_eyebrow">GAME DEVELOPER PORTFOLIO</p>
-      <h1 data-i18n="hero_name">Enis Eymen Dertli</h1>
-      <p class="subtitle" data-i18n="hero_role">Game Developer</p>
-      <p class="lead" data-i18n="hero_desc">
-        I build gameplay-focused projects with Unity, Unreal Engine, and web technologies.
-      </p>
-      <div class="hero-actions">
-        <a class="btn primary" href="#projects" data-i18n="cta_projects">See Projects</a>
-        <a class="btn secondary" href="#contact" data-i18n="cta_contact">Contact Me</a>
-      </div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menüyü aç">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Ana menü">
+        <a href="#about">Hakkımda</a>
+        <a href="#skills">Yetenekler</a>
+        <a href="#projects">Projeler</a>
+        <a href="#timeline">Yolculuk</a>
+        <a href="#contact" class="button button-sm">İletişim</a>
+      </nav>
     </div>
   </header>
 
-  <main>
-    <section id="about" class="section card">
-      <h2 data-i18n="about_title">About Me</h2>
-      <p data-i18n="about_text">
-        I am a game developer focused on gameplay, prototyping, and interactive experiences.
-        I enjoy turning ideas into playable systems and polishing them into clear player experiences.
-      </p>
+  <main id="main-content">
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">GAME DEVELOPER • UNITY • GAMEPLAY SYSTEMS</p>
+          <h1>Oynanışı öne çıkaran, temiz ve sunulabilir prototipler geliştiriyorum.</h1>
+          <p class="hero-text">
+            Unity ve C# odaklı çalışan bir game developer olarak mekanik tasarımı, oynanış hissi,
+            prototipleme ve proje sunumu tarafını bir araya getiriyorum.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button" href="#projects">Projelerimi Gör</a>
+            <a class="button button-ghost" href="#contact">Benimle İletişime Geç</a>
+          </div>
+
+          <ul class="hero-metrics" aria-label="Öne çıkan bilgiler">
+            <li><strong>3+</strong><span>geliştirilen proje</span></li>
+            <li><strong>Unity</strong><span>oynanış odaklı üretim</span></li>
+            <li><strong>GitHub</strong><span>sürüm kontrollü çalışma</span></li>
+          </ul>
+        </div>
+
+        <aside class="hero-card glass" aria-label="Profil özeti">
+          <div class="status-row">
+            <span class="status-dot"></span>
+            <span>Yeni fırsatlara açık</span>
+          </div>
+          <h2>Hızlı Özet</h2>
+          <dl class="summary-list">
+            <div>
+              <dt>Odak</dt>
+              <dd>Gameplay programming, prototyping, UI implementation</dd>
+            </div>
+            <div>
+              <dt>Teknolojiler</dt>
+              <dd>Unity, C#, Git, Figma, Phaser</dd>
+            </div>
+            <div>
+              <dt>Hedef</dt>
+              <dd>Junior game developer / gameplay programmer rolleri</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <p class="section-label">ABOUT ME</p>
+          <h2>Ben kimim?</h2>
+        </div>
+        <div class="card reveal">
+          <p>
+            Merhaba, ben Enis Eymen Dertli. Oyun geliştirme tarafında özellikle <strong>oynanış akışı</strong>,
+            <strong>mekanik uygulama</strong>, <strong>prototip çıkarma</strong> ve <strong>oyuncu deneyimi</strong>
+            üzerine odaklanıyorum. Kısa sürede test edilebilir sistemler kurmayı ve fikirleri çalışır hale getirmeyi seviyorum.
+          </p>
+          <p>
+            Portfolyomu; anlatımı sade, projeleri öne çıkaran ve GitHub Pages üzerinde rahatça yayınlanabilecek şekilde tasarladım.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-label">SKILLS</p>
+            <h2>Kullandığım araçlar ve çalışma alanlarım</h2>
+          </div>
+          <p class="section-subtext">Bu alanı kendi güçlü yönlerine göre çok kolay düzenleyebilirsin.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="card reveal">
+            <h3>Gameplay Development</h3>
+            <p>Core loop, combat flow, movement, enemy logic, level interaction.</p>
+            <ul class="chip-list">
+              <li>Unity</li>
+              <li>C#</li>
+              <li>Game Feel</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <h3>UI &amp; Prototype</h3>
+            <p>Menu flow, HUD, clickable mockups, hızlı vertical slice üretimi.</p>
+            <ul class="chip-list">
+              <li>Figma</li>
+              <li>Canvas UI</li>
+              <li>UX Flow</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <h3>Workflow</h3>
+            <p>Version control, ekip içi paylaşım, görev takibi ve iteratif geliştirme.</p>
+            <ul class="chip-list">
+              <li>Git / GitHub</li>
+              <li>Agile mindset</li>
+              <li>Documentation</li>
+            </ul>
+          </article>
+        </div>
+      </div>
     </section>
 
     <section id="projects" class="section">
-      <div class="section-head">
-        <h2 data-i18n="projects_title">Featured Projects</h2>
-        <p data-i18n="projects_subtitle">A few projects that represent my design and development approach.</p>
-      </div>
+      <div class="container">
+        <div class="section-head projects-head">
+          <div>
+            <p class="section-label">PROJECTS</p>
+            <h2>Seçili projeler</h2>
+          </div>
+          <div class="filters" role="tablist" aria-label="Proje filtreleri">
+            <button class="filter-button is-active" data-filter="all">Tümü</button>
+            <button class="filter-button" data-filter="unity">Unity</button>
+            <button class="filter-button" data-filter="prototype">Prototype</button>
+            <button class="filter-button" data-filter="gamejam">Game / Student</button>
+          </div>
+        </div>
 
-      <div class="project-grid">
-        <article class="project-card">
-          <div class="project-tag" data-i18n="project1_tag">Action / Prototype</div>
-          <h3 data-i18n="project1_title">Elemental Combat Prototype</h3>
-          <p data-i18n="project1_desc">A combat-focused prototype built around elemental interactions and enemy weaknesses.</p>
-        </article>
+        <div class="projects-grid">
+          <article class="project-card reveal" data-category="unity prototype">
+            <div class="project-thumb gradient-thumb thumb-one" aria-hidden="true"></div>
+            <div class="project-content">
+              <div class="project-top">
+                <span class="project-type">Unity • 3D Puzzle / Narrative</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3>The Final Loop</h3>
+              <p>
+                Psikolojik bulmaca ve anlatı odaklı escape-room deneyimi. Projede çevresel etkileşim,
+                ilerleme akışı ve oyuncu yönlendirme mantığı üzerine çalıştım.
+              </p>
+              <ul class="chip-list">
+                <li>Unity</li>
+                <li>C#</li>
+                <li>Puzzle Flow</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" aria-label="The Final Loop GitHub linki">GitHub</a>
+                <a href="#" aria-label="The Final Loop detay sayfası">Detay</a>
+              </div>
+            </div>
+          </article>
 
-        <article class="project-card">
-          <div class="project-tag" data-i18n="project2_tag">Narrative / Puzzle</div>
-          <h3 data-i18n="project2_title">Psychological Puzzle Concept</h3>
-          <p data-i18n="project2_desc">A first-person project blending environmental storytelling, puzzle design, and atmosphere.</p>
-        </article>
+          <article class="project-card reveal" data-category="unity gamejam">
+            <div class="project-thumb gradient-thumb thumb-two" aria-hidden="true"></div>
+            <div class="project-content">
+              <div class="project-top">
+                <span class="project-type">Unity • Action / Beat 'em up</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3>Elemental Ascent</h3>
+              <p>
+                Element kombinasyonları üzerine kurulu aksiyon oyunu. Düşman zayıflıkları ve bölüm bazlı
+                ilerleme sistemiyle oyuncuya yeni yetenekler açan bir yapı hedeflendi.
+              </p>
+              <ul class="chip-list">
+                <li>Combat Logic</li>
+                <li>Enemy Design</li>
+                <li>Progression</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" aria-label="Elemental Ascent GitHub linki">GitHub</a>
+                <a href="#" aria-label="Elemental Ascent oynanış videosu">Video</a>
+              </div>
+            </div>
+          </article>
 
-        <article class="project-card">
-          <div class="project-tag" data-i18n="project3_tag">Web / Game UI</div>
-          <h3 data-i18n="project3_title">Multiplayer Party UI</h3>
-          <p data-i18n="project3_desc">A UI-focused project exploring game menus, party systems, and interactive flows.</p>
-        </article>
+          <article class="project-card reveal" data-category="prototype gamejam">
+            <div class="project-thumb gradient-thumb thumb-three" aria-hidden="true"></div>
+            <div class="project-content">
+              <div class="project-top">
+                <span class="project-type">Phaser • Party Game UI</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3>Taboo / Countdown UI Prototype</h3>
+              <p>
+                Akış ekranları, sayaç sistemi, lobby kurulumu ve oyuncu arayüzü odaklı hızlı prototip.
+              </p>
+              <ul class="chip-list">
+                <li>Phaser</li>
+                <li>UI Flow</li>
+                <li>Rapid Prototyping</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" aria-label="Countdown UI GitHub linki">GitHub</a>
+                <a href="#" aria-label="Countdown UI detay sayfası">Detay</a>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="section card">
-      <h2 data-i18n="contact_title">Contact</h2>
-      <p data-i18n="contact_text">You can reach me for collaborations, internships, and game development opportunities.</p>
-      <div class="contact-list">
-        <a href="mailto:yourmail@example.com">yourmail@example.com</a>
-        <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer">LinkedIn</a>
+    <section id="timeline" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-label">JOURNEY</p>
+            <h2>Eğitim ve gelişim süreci</h2>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div class="card">
+              <p class="timeline-date">Yakın dönem</p>
+              <h3>Game development odaklı proje üretimi</h3>
+              <p>Unity, prototip geliştirme, oyun sunumları ve portfolyo projeleri üzerinde yoğunlaşma.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div class="card">
+              <p class="timeline-date">Üniversite / Yüksek Lisans</p>
+              <h3>Akademik arka plan</h3>
+              <p>Buraya okul, bölüm, mezuniyet ve devam eden yüksek lisans bilgilerini ekleyebilirsin.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-box reveal">
+        <div>
+          <p class="section-label">CONTACT</p>
+          <h2>İletişim bilgileri</h2>
+          <p>
+            İş birliği, staj veya junior fırsatları için benimle iletişime geçebilirsin.
+          </p>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:mail@example.com">mail@example.com</a>
+          <a href="https://github.com/username" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/username" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Enis Eymen Dertli</p>
+      <a href="#home">Yukarı dön</a>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
