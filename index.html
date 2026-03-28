@@ -1,41 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Game Developer Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enis Eymen Dertli | Game Developer</title>
+  <meta name="description" content="Game developer portfolio with Turkish and English language switch." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <button id="langToggle" class="lang-toggle" aria-label="Change language">
+    <span class="lang-label" data-i18n="lang_button">TR</span>
+  </button>
 
-<header class="navbar">
-  <h1 data-i18n="hero_name">Enis Eymen Dertli</h1>
-  <div class="controls">
-    <span data-i18n="hero_role">Game Developer</span>
-    <button id="langToggle">TR / EN</button>
-  </div>
-</header>
+  <header class="hero">
+    <nav class="nav">
+      <div class="brand">EED</div>
+      <div class="nav-links">
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </div>
+    </nav>
 
-<section class="hero">
-  <h2 data-i18n="about_title">About Me</h2>
-  <p data-i18n="about_text">
-    I develop gameplay-focused projects using modern game technologies.
-  </p>
-</section>
+    <div class="hero-content">
+      <p class="eyebrow" data-i18n="hero_eyebrow">GAME DEVELOPER PORTFOLIO</p>
+      <h1 data-i18n="hero_name">Enis Eymen Dertli</h1>
+      <p class="subtitle" data-i18n="hero_role">Game Developer</p>
+      <p class="lead" data-i18n="hero_desc">
+        I build gameplay-focused projects with Unity, Unreal Engine, and web technologies.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#projects" data-i18n="cta_projects">See Projects</a>
+        <a class="btn secondary" href="#contact" data-i18n="cta_contact">Contact Me</a>
+      </div>
+    </div>
+  </header>
 
-<section class="projects">
-  <h2 data-i18n="projects_title">Projects</h2>
-  <div class="project-card">
-    <h3 data-i18n="project1_title">Sample Game Project</h3>
-    <p data-i18n="project1_desc">A gameplay-focused action experience.</p>
-  </div>
-</section>
+  <main>
+    <section id="about" class="section card">
+      <h2 data-i18n="about_title">About Me</h2>
+      <p data-i18n="about_text">
+        I am a game developer focused on gameplay, prototyping, and interactive experiences.
+        I enjoy turning ideas into playable systems and polishing them into clear player experiences.
+      </p>
+    </section>
 
-<section class="contact">
-  <h2 data-i18n="contact_title">Contact</h2>
-  <p>Email: example@mail.com</p>
-</section>
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2 data-i18n="projects_title">Featured Projects</h2>
+        <p data-i18n="projects_subtitle">A few projects that represent my design and development approach.</p>
+      </div>
 
-<script src="script.js"></script>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-tag" data-i18n="project1_tag">Action / Prototype</div>
+          <h3 data-i18n="project1_title">Elemental Combat Prototype</h3>
+          <p data-i18n="project1_desc">A combat-focused prototype built around elemental interactions and enemy weaknesses.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag" data-i18n="project2_tag">Narrative / Puzzle</div>
+          <h3 data-i18n="project2_title">Psychological Puzzle Concept</h3>
+          <p data-i18n="project2_desc">A first-person project blending environmental storytelling, puzzle design, and atmosphere.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag" data-i18n="project3_tag">Web / Game UI</div>
+          <h3 data-i18n="project3_title">Multiplayer Party UI</h3>
+          <p data-i18n="project3_desc">A UI-focused project exploring game menus, party systems, and interactive flows.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section card">
+      <h2 data-i18n="contact_title">Contact</h2>
+      <p data-i18n="contact_text">You can reach me for collaborations, internships, and game development opportunities.</p>
+      <div class="contact-list">
+        <a href="mailto:yourmail@example.com">yourmail@example.com</a>
+        <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
