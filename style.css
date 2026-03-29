@@ -472,8 +472,11 @@ p {
   background-position: center;
 }
 
-.thumb-three {
-  background: linear-gradient(135deg, #112131 0%, #106a7f 48%, #1ee3cf 100%);
+.thumb-two {
+  background-image:
+    url("images/TheFinalLoop.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .project-content {
