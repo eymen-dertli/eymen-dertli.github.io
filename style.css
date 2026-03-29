@@ -81,9 +81,9 @@ button {
 }
 
 .section-alt {
-  background: linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.03));
-  border-top: 1px solid rgba(255,255,255,0.04);
-  border-bottom: 1px solid rgba(255,255,255,0.04);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.015), rgba(255, 255, 255, 0.03));
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
 
 .section-label,
@@ -148,7 +148,7 @@ p {
   z-index: 30;
   backdrop-filter: blur(18px);
   background: rgba(7, 11, 23, 0.7);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .nav-wrap {
@@ -196,8 +196,8 @@ p {
   width: 52px;
   height: 52px;
   border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.08);
-  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
   color: white;
   padding: 0;
   cursor: pointer;
@@ -255,7 +255,7 @@ p {
 }
 
 .hero-metrics li {
-  background: rgba(255,255,255,0.03);
+  background: rgba(255, 255, 255, 0.03);
   padding: 18px;
   border-radius: var(--radius-sm);
 }
@@ -308,7 +308,7 @@ p {
 
 .summary-list div {
   padding-top: 16px;
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .summary-list dt {
@@ -327,7 +327,7 @@ p {
   inset: auto -10% -20% auto;
   width: 480px;
   height: 480px;
-  background: radial-gradient(circle, rgba(116, 192, 252, 0.18) 0%, rgba(124,92,255,0.1) 35%, transparent 70%);
+  background: radial-gradient(circle, rgba(116, 192, 252, 0.18) 0%, rgba(124, 92, 255, 0.1) 35%, transparent 70%);
   filter: blur(20px);
   pointer-events: none;
 }
@@ -355,7 +355,7 @@ p {
 .button-ghost {
   background: transparent;
   color: var(--text);
-  border-color: rgba(255,255,255,0.14);
+  border-color: rgba(255, 255, 255, 0.14);
 }
 
 .button-sm {
@@ -398,8 +398,8 @@ p {
 
 .chip-list li,
 .filter-button {
-  border: 1px solid rgba(255,255,255,0.08);
-  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
   color: var(--text);
 }
 
@@ -429,8 +429,8 @@ p {
 .filter-button:hover,
 .filter-button:focus-visible,
 .filter-button.is-active {
-  background: linear-gradient(135deg, rgba(116,192,252,0.18), rgba(124,92,255,0.22));
-  border-color: rgba(255,255,255,0.18);
+  background: linear-gradient(135deg, rgba(116, 192, 252, 0.18), rgba(124, 92, 255, 0.22));
+  border-color: rgba(255, 255, 255, 0.18);
   transform: translateY(-1px);
 }
 
@@ -455,11 +455,15 @@ p {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(255,255,255,0.08), transparent 65%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 65%);
 }
 
 .thumb-one {
-  background: linear-gradient(135deg, #13243e 0%, #273e7e 40%, #8d3cff 100%);
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("images/TheUnlitDoor.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .thumb-two {
@@ -506,7 +510,7 @@ p {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(180deg, rgba(116,192,252,0.5), rgba(124,92,255,0.35));
+  background: linear-gradient(180deg, rgba(116, 192, 252, 0.5), rgba(124, 92, 255, 0.35));
 }
 
 .timeline-item {
@@ -523,7 +527,7 @@ p {
   height: 20px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
-  box-shadow: 0 0 30px rgba(116,192,252,0.35);
+  box-shadow: 0 0 30px rgba(116, 192, 252, 0.35);
 }
 
 .timeline-date {
@@ -560,7 +564,7 @@ p {
   display: flex;
   justify-content: space-between;
   gap: 16px;
-  border-top: 1px solid rgba(255,255,255,0.06);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
   padding-top: 24px;
 }
 
@@ -589,7 +593,9 @@ p {
     scroll-behavior: auto;
   }
 
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     animation: none !important;
     transition: none !important;
   }
@@ -601,6 +607,7 @@ p {
 }
 
 @media (max-width: 980px) {
+
   .hero-grid,
   .two-col,
   .contact-box,
@@ -643,7 +650,7 @@ p {
     gap: 12px;
     padding: 16px;
     background: rgba(7, 11, 23, 0.96);
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 20px;
     box-shadow: var(--shadow);
   }
