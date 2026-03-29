@@ -467,7 +467,10 @@ p {
 }
 
 .thumb-two {
-  background: linear-gradient(135deg, #251326 0%, #922e31 40%, #f59f00 100%);
+  background-image:
+    url("images/TheUnlitDoor.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .thumb-three {
