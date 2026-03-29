@@ -460,21 +460,32 @@ p {
 
 .thumb-one {
   background-image:
-    url("images/TheUnlitDoor.png");
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
+    url("images/NWord.png");
   background-size: cover;
   background-position: center;
 }
 
 .thumb-two {
   background-image:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
     url("images/TheUnlitDoor.png");
   background-size: cover;
   background-position: center;
 }
 
-.thumb-two {
+.thumb-three {
   background-image:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
     url("images/TheFinalLoop.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.thumb-four {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
+    url("images/taslakelement.jpg");
   background-size: cover;
   background-position: center;
 }
