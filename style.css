@@ -458,7 +458,7 @@ p {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 65%);
 }
 
-.thumb-one {
+.thumb-nword {
   background-image:
     linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
     url("images/NWord.png");
@@ -466,7 +466,7 @@ p {
   background-position: center;
 }
 
-.thumb-two {
+.thumb-theunlitdoor {
   background-image:
     linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
     url("images/TheUnlitDoor.png");
@@ -474,7 +474,7 @@ p {
   background-position: center;
 }
 
-.thumb-three {
+.thumb-thefinalloop {
   background-image:
     linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
     url("images/TheFinalLoop.png");
@@ -482,7 +482,7 @@ p {
   background-position: center;
 }
 
-.thumb-four {
+.thumb-loyaltyofelements {
   background-image:
     linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
     url("images/taslakelement.jpg");
