@@ -580,6 +580,12 @@ p {
   font-weight: 600;
 }
 
+.contact-links img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
 .site-footer {
   padding: 24px 0 48px;
 }
