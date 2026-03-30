@@ -578,7 +578,8 @@ p {
 .contact-links a {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+
   color: var(--text);
   font-weight: 600;
 }
