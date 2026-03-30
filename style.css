@@ -576,17 +576,18 @@ p {
 }
 
 .contact-links a {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 10px;
-
   color: var(--text);
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .contact-links img {
   width: 18px;
   height: 18px;
+  min-width: 18px;
   object-fit: contain;
 }
 
