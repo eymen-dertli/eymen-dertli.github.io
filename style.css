@@ -493,7 +493,7 @@ p {
 .thumb-atilimconnect {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-    url("images/AtılımConnect.jpeg");
+    url("images/atılım-connect.png");
   background-size: cover;
   background-position: center;
 }
