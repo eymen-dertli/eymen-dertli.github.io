@@ -482,6 +482,22 @@ p {
   background-position: center;
 }
 
+.thumb-theunlitdoor {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("images/LoyaltyOfElements.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.thumb-theunlitdoor {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("images/WorkUnderPressure.png");
+  background-size: cover;
+  background-position: center;
+}
+
 .thumb-atilimconnect {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
