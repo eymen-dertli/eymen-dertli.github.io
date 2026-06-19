@@ -18,3 +18,5 @@ Kişiselleştirmen gereken yerler:
 - Oynanış GIF'leri / ekran görüntüleri
 - İndirme CV butonu
 - İngilizce sürüm
+
+geliştirme durumu için yeşil sarı mavi butonlar eklenicek 
